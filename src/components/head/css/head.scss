@@ -1,0 +1,89 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;  
+    background-color: #8590E6;
+    color: #ffffff;
+    z-index: 20020;
+    box-shadow: 0 5px 8px rgb(170, 170, 170);
+    >.my-meun{
+        width: 10%;
+        min-width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    >.search-int{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        >div:nth-of-type(1){
+            width: 85%;
+            height: 100%;
+            >input{
+                width: 100%;
+                height: 100%;
+                padding:0 20px; 
+                color: #000000;
+            }
+            input::-webkit-input-placeholder {
+                color: #cecece; 
+            }
+            /*  Mozilla Firefox 4-18使用伪类 */
+            input:-moz-placeholder {
+                color: #cecece; 
+            }
+            /* Mozilla Firefox 19+ 使用伪元素  */
+            input::-moz-placeholder { 
+                color: #cecece; 
+            }
+            /* IE10使用伪类 */
+            input:-ms-input-placeholder {
+                color: #cecece; 
+            } 
+        }
+        >div:nth-of-type(2){
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >img{
+                // width: 70%;
+                // height: 80%;
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+                max-width: 70px;
+                max-height: 80px;
+            }
+        }
+    }
+    >.search-btm{
+        width: 10%;
+        height: 100%;
+        >div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >img{
+                // width: 90%;
+                // height: 100%;
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+                max-width: 70px;
+                max-height: 80px;
+            }
+        } 
+    }
+}
